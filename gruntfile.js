@@ -2,7 +2,7 @@ module.exports = function(grunt){
 	var nodeModules = {
 		angular : 'node_modules/angular/angular.min.js',
 		angularRoute : 'node_modules/angular-route/angular-route.min.js'
-	}
+	};
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		concat: {
@@ -45,5 +45,5 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-http-server');
 
-	grunt.registerTask('default', ['http-server', 'watch']);
+	grunt.registerTask('default', ['concat', 'http-server', 'watch']);
 }
