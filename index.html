@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html  ng-app="app">
+<head>
+	<!-- <link rel="stylesheet" type="text/css" href="app/css/app.css"> -->
+</head>
+<body ng-controller="MainCtrl">
+	<div class="header" ng-include='"app/include/header.html"'></div>
+	<h1>Message: {{message}}</h1>
+	<div ng-view></div>
+	<div custom-directive></div>
+	<div class="footer" ng-include='"app/include/footer.html"'></div>
+	
+</body>
+<script src="app/dist/angular-seed.debug.js"></script>
+</html>
